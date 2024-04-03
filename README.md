@@ -3,14 +3,10 @@
 ## AIM
 
 To develop a Recurrent Neural Network model for stock price prediction.
-# Stock Price Prediction
-
-## AIM
-
-To develop a Recurrent Neural Network model for stock price prediction.
 
 ## Problem Statement and Dataset
-![image](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/3d6be3be-2ec0-419d-8e1e-eb7aa0e089c8)
+![image](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/0b6587d5-f929-4bc0-bb95-af7593af59bf)
+
 
 ## Design Steps
 
@@ -33,8 +29,8 @@ compile the training set
 fit the training set
 
 ## Program
-#### Name: YUVARAJ B
-#### Register Number:212222230182
+#### Name: R.THIVAKAR
+#### Register Number:212222240109
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -78,7 +74,7 @@ model.add(layers.SimpleRNN(60,input_shape=(60,1)))
 model.add(layers.Dense(1))
 model.compile(optimizer='adam',loss='mse')
 
-print("NAME : R.Thivakar REG NO. : 212222240109")
+print("NAME : R.THIVAKAR  REG NO. : 212222240109")
 model.summary()
 
 model.fit(X_train1,y_train,epochs=100, batch_size=32)
@@ -105,7 +101,7 @@ X_test.shape
 predicted_stock_price_scaled = model.predict(X_test)
 predicted_stock_price = sc.inverse_transform(predicted_stock_price_scaled)
 
-print("Name: YUVARAJ B          Register Number:212222230182")
+print("Name: R.THIVAKAR          Register Number:212222240109")
 plt.plot(np.arange(0,1384),inputs, color='red', label = 'Test(Real) Google stock price')
 plt.plot(np.arange(60,1384),predicted_stock_price, color='blue', label = 'Predicted Google stock price')
 plt.title('Google Stock Price Prediction')
@@ -117,42 +113,11 @@ plt.show()
 ## Output
 
 ### True Stock Price, Predicted Stock Price vs time
-![exp 5 1](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/50733549-9475-4553-87cf-270ef970380e)
+![image](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/1b678184-f0d0-4f03-9762-f2587f1410bd)
+
 
 ### Mean Square Error
-![exp 5 2](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/4678375b-026d-4fff-8041-58cc2e84cad9)
+![image](https://github.com/ThivakarR/rnn-stock-price-prediction/assets/118707074/8b1edfb6-489a-4d38-a3af-61ba08c3418e)
 
 ## Result
 Thus the program is successfully created and executed.
-
-## Problem Statement and Dataset
-
-
-## Design Steps
-
-### Step 1:
-Write your own steps
-
-### Step 2:
-
-### Step 3:
-
-
-
-## Program
-#### Name:
-#### Register Number:
-
-Include your code here
-
-## Output
-
-### True Stock Price, Predicted Stock Price vs time
-
-Include your plot here
-
-### Mean Square Error
-
-Include the mean square error
-
-## Result
